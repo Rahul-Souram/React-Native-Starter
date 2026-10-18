@@ -2,6 +2,7 @@
 import { Provider } from "react-redux";
 import { Tabs } from "expo-router";
 import { store } from "../redux/store";
+import "../../global.css";
 
 export default function AppLayout() {
   return (

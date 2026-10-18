@@ -1,5 +1,5 @@
 
-import { Button, ScrollView, Text } from "react-native";
+import { Button, ScrollView, Text, View } from "react-native";
 import styles from "../styles/about.styles";
 import { Link, router } from "expo-router";
 
@@ -33,6 +33,11 @@ export default function AboutScreen() {
   title="API TEST"
   onPress={() => router.push("/api-demo")}
 />
+<View className="flex-1 bg-slate-50 p-6">
+  <Text className="text-3xl text-center font-bold text-indigo-600">
+    NativeWind is working!
+  </Text>
+</View>
     </ScrollView>
   );
 }
